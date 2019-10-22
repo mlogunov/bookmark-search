@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "bookmark-search-client-side-solution",
+    "id": "81634ace-4e04-45ce-8f36-4389d062b515",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/bookmark-search.sppkg"
+  }
+}
