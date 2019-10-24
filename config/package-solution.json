@@ -4,8 +4,22 @@
     "name": "bookmark-search-client-side-solution",
     "id": "81634ace-4e04-45ce-8f36-4389d062b515",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true
-  },
+    "includeClientSideAssets": false,
+    "features": [{
+      "title": "asset-deployment-bookmark-search-client-side-solution",
+      "description": "asset-deployment-bookmark-search-client-side-solution",
+      "id": "cea79e21-c646-47b3-99c5-379ad1320754",
+      "version": "1.0.0.0",
+      "assets": {
+        "elementManifests": [
+          "elements.xml"
+        ],
+        "elementFiles":[
+          "schema.xml"
+        ]
+      }
+    }]
+  }, 
   "paths": {
     "zippedPackage": "solution/bookmark-search.sppkg"
   }

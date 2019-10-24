@@ -21,7 +21,7 @@ export default class BookmarkSearchWebPart extends BaseClientSideWebPart<IBookma
     const element: React.ReactElement<IBookmarkSearchProps > = React.createElement(
       BookmarkSearch,
       {
-        description: this.properties.description
+        context: this.context
       }
     );
 

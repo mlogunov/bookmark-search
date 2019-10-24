@@ -1,3 +1,5 @@
+import { WebPartContext } from "@microsoft/sp-webpart-base";
+
 export interface IBookmarkSearchProps {
-  description: string;
+  context: WebPartContext;
 }

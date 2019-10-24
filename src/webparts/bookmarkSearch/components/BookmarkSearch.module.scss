@@ -1,6 +1,76 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
+
+:global {
+  /*Fix Icons*/
+  .ms-Icon[data-icon-name="Bookmarks"] {
+    font-family: "FabricMDL2Icons-1";
+  }
+  .ms-Icon[data-icon-name="SingleBookmark"] {
+    font-family: "FabricMDL2Icons-6";
+  }
+  .ms-Icon[data-icon-name="DoubleBookmark"] {
+    font-family: "FabricMDL2Icons-4";
+  }
+}
+
 .bookmarkSearch {
+  display: flex;
+  flex-direction: column;
+  .manageButton{
+    align-self: flex-end;
+    margin-bottom: 5px;
+    &>a{
+      display: flex;
+      align-items: center;
+      &>i{
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .spinner{
+    padding: 20px 0;
+  }
+  .searchBoxContainer{
+    display: flex;
+    .icon{
+      font-size: 30px;
+    }
+    .searchBox{
+      width: 100%;
+      margin-left: 5px;
+    }
+  }
+  .searchResultBox{
+    margin-top: 20px;
+    .searchResult{
+      margin: 0 0 20px 35px;
+      position: relative;
+      .resultIcon{
+        font-size: 16px;
+        position: absolute;
+        left: -24px;
+        top:5px;
+      }
+      h3 {
+        margin:0;
+        padding: 0;
+      }
+      .resultTitle{
+        margin: 0;
+      }
+      .resultUrl{
+        margin: 0;
+      }
+      .resultDescription{
+        margin: 0;
+      }
+    }
+  }
+  
+  
+  /*
   .container {
     max-width: 700px;
     margin: 0px auto;
@@ -71,4 +141,5 @@
       display: inline-block;
     }
   }
+  */
 }
