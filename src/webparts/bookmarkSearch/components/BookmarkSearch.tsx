@@ -65,7 +65,7 @@ export default class BookmarkSearch extends React.Component < IBookmarkSearchPro
     const results: ISearchResult[] = this.state.filter.length > 1 ? 
     this.state.results.filter((result: ISearchResult): boolean =>{
       return result.tags.toLowerCase().indexOf(this.state.filter.toLowerCase())  !== -1
-    }).slice(0, 19) : [];
+    }).slice(0, 29) : [];
     const manageButton = this._hasPermission ?
       <div className={styles.manageButton}>
         <Link href={this.props.context.pageContext.web.absoluteUrl + '/Lists/Bookmarks'} target='_blank'>
@@ -89,7 +89,7 @@ export default class BookmarkSearch extends React.Component < IBookmarkSearchPro
         {manageButton}
         <div className={styles.searchBoxContainer}>
           <Icon iconName='DoubleBookmark' className={styles.icon}/>
-          <SearchBox labelText={strings.SearchBoxPlaceholder} className={styles.searchBox} onChange={this._onFilterChange} />
+          <SearchBox labelText={strings.SearchBoxPlaceholder} className={styles.searchBox} onChange={this._onFilterChange} value={this.state.filter} />
         </div>
         <SearchResult results={results} filter={this.state.filter} />
       </div >
